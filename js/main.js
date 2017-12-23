@@ -7,8 +7,13 @@ myform.submit(function(event){
   var service_id = "yandex";
   var template_id = "literally_photo_feedback";
 
+	var params = myform.serializeArray().reduce(function(obj, item) {
+     obj[item.name] = item.value;
+     return obj;
+  }, {});
+	
   myform.find("button").text("Отправка...");
-  emailjs.sendForm(service_id,template_id,"myform")
+  emailjs.sendForm(service_id,template_id,"myform", params)
   	.then(function(){ 
     	alert("Отправлено!");
        myform.find("button").text("Отправить");
