@@ -16,13 +16,14 @@ p {
   font-family: 'Roboto', sans-serif;
   line-height: 40px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 700;
 }
 ul {
   font-family: 'Roboto', sans-serif;
   padding-left: 0;
   line-height: 40px;
   font-size: 16px;
+  font-weight: 100;
 }
 ul li {
   list-style: none;
@@ -1084,8 +1085,8 @@ article {
 }
 
 body {
-  font-family: roboto;
-  font-size: 16px;
+  font-family: arial;
+  font-size: 12px;
   color: #666;
 }
 form {
