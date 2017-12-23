@@ -1,3 +1,25 @@
+
+var myform = $("form#myform");
+myform.submit(function(event){
+	event.preventDefault();
+
+  var service_id = "yandex";
+  var template_id = "literally_photo_feedback";
+
+  myform.find("button").text("Отправка...");
+  emailjs.sendForm(service_id,template_id,"myform")
+  	.then(function(){ 
+    	alert("Отправлено!");
+       myform.find("button").text("Отправить");
+    }, function(err) {
+       alert("Ошибка\r\n Response:\n " + JSON.stringify(err));
+       myform.find("button").text("Отправить");
+    });
+  return false;
+});
+
+
+
 (function($){
     $.fn.scrollingTo = function( opts ) {
         var defaults = {
@@ -105,26 +127,6 @@ $(".fancybox").fancybox({
         }
     }
 });
-
-var myform = $("form#myform");
-myform.submit(function(event){
-	event.preventDefault();
-
-  var service_id = "yandex";
-  var template_id = "literally_photo_feedback";
-
-  myform.find("button").text("Отправка...");
-  emailjs.sendForm(service_id,template_id,"myform")
-  	.then(function(){ 
-    	alert("Отправлено!");
-       myform.find("button").text("Отправить");
-    }, function(err) {
-       alert("Ошибка\r\n Response:\n " + JSON.stringify(err));
-       myform.find("button").text("Отправитьо");
-    });
-  return false;
-});
-
 
 
 
