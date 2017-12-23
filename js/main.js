@@ -1,25 +1,21 @@
 /* Contact Section Start
 */
 var myform = $("form#myform");
-myform.submit(function(event){
-	event.preventDefault();
+myform.submit(function(event) {
+  event.preventDefault();
 
-  var service_id = "yandex";
+  // Change to your service ID, or keep using the default service
+  var service_id = "default_service";
   var template_id = "literally_photo_feedback";
 
-	var params = myform.serializeArray().reduce(function(obj, item) {
-     obj[item.name] = item.value;
-     return obj;
-  }, {});
-	
-  myform.find("button").text("Отправка...");
-  emailjs.sendForm(service_id,template_id,"myform", params)
-  	.then(function(){ 
-    	alert("Отправлено!");
-       myform.find("button").text("Отправить");
+  myform.find("button").text("Отправка");
+  emailjs.sendForm(service_id, template_id, "myform")
+    .then(function() {
+      alert("Отправлено!");
+      myform.find("button").text("Отправить");
     }, function(err) {
-       alert("Ошибка\r\n Response:\n " + JSON.stringify(err));
-       myform.find("button").text("Отправить");
+      alert("Ошибка!\r\n Response:\n " + JSON.stringify(err));
+      myform.find("button").text("Отправить");
     });
   return false;
 });
