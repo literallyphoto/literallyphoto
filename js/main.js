@@ -1,4 +1,5 @@
-
+/* Contact Section Start
+*/
 var myform = $("form#myform");
 myform.submit(function(event){
 	event.preventDefault();
