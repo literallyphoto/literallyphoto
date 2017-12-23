@@ -16,14 +16,14 @@ p {
   font-family: 'Roboto', sans-serif;
   line-height: 40px;
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 500;
 }
 ul {
   font-family: 'Roboto', sans-serif;
   padding-left: 0;
   line-height: 40px;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
 }
 ul li {
   list-style: none;
