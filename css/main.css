@@ -580,13 +580,10 @@ ul.social-icons li {
   color: #666;
   line-height: 25px;
 }
-#product-showcase-banner .block .buttons {
-  margin-top: 25px;
-}
+
 #product-showcase-banner .block .buttons .btn {
   color: #fff;
   border: none;
-  padding: 12px 40px;
   -webkit-transition: .2s all;
   -o-transition: .2s all;
   transition: .2s all;
@@ -595,7 +592,6 @@ ul.social-icons li {
 }
 #product-showcase-banner .block .buttons .btn-demo {
   background: #5abd4f;
-  margin-right: 8px;
   border-bottom: 3px solid #429E38;
 }
 #product-showcase-banner .block .buttons .btn-demo:hover {
