@@ -116,11 +116,11 @@ myform.submit(function(event){
   myform.find("button").text("Отправка...");
   emailjs.sendForm(service_id,template_id,"myform")
   	.then(function(){ 
-    	alert("Sent!");
-       myform.find("button").text("Отправлено");
+    	alert("Отправлено!");
+       myform.find("button").text("Отправить");
     }, function(err) {
-       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-       myform.find("button").text("Отправлено");
+       alert("Ошибка\r\n Response:\n " + JSON.stringify(err));
+       myform.find("button").text("Отправитьо");
     });
   return false;
 });
