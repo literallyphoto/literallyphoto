@@ -1,4 +1,4 @@
-HSE// meciacommunications
+HSE// mediacommunications
 
 Copyright (c) 2017 
 
