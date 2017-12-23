@@ -1081,8 +1081,8 @@ article {
 }
 
 body {
-  font-family: roboto;
-  font-size: 26px;
+  font-family: arial;
+  font-size: 12px;
   color: #666;
 }
 form {
@@ -1095,7 +1095,7 @@ form {
 }
 form input,
 form textarea {
-  font: roboto;
+  font: inherit;
   padding: 5px 5px;
   width: 100%;
   margin-top: 3px;
@@ -1103,7 +1103,7 @@ form textarea {
   box-sizing: border-box;
 }
 form button {
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.2);
   padding: 8px 35px;
   font-size: 12px;
   background: #02bdd5;
@@ -1111,7 +1111,7 @@ form button {
 }
 form label {
   color: #02bdd5;
-  font-size: 16px;
+  font-size: 11px;
   margin-bottom: 2px;
   display: block;
 }
