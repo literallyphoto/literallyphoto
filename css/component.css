@@ -467,7 +467,7 @@
 	width: 200%;
 	height: 100%;
 	-webkit-backface-visibility: hidden;
-	background-image: url(../img/wave.svg);
+	background-image: url(../images/wave.svg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	-webkit-transition: -webkit-transform .3s;
