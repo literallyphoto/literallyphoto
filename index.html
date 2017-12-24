@@ -84,6 +84,18 @@
    })();
 </script>
     </head>
+    
+    $(function() {
+$('#large-img').hide();
+$('#large-img').load( function() {
+$('#loader').hide();
+$('#large-img').show();
+} );
+
+});
+    
+    <img id="loader" src="/images/6.svg" alt="Loading, Loading!"></img>              
+
     <body>
         <!--
         ==================================================
